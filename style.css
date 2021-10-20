@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  background-color: #3c3a39;
+  align-items: flex-end;
+  width: 375px;
+  height: 92px;
+}
+
+.nav-element {
+  width: 50%;
+  flex: 1;
+}
+
+.name-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.nav-logo {
+  margin-left: 12px;
+}
+
+.hamburger-div {
+  margin-right: 24px;
+  margin-bottom: 4px;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger-icon {
+  width: 18px;
+  height: 12px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #1c1a19;
+  position: absolute;
+  top: 92px;
+  width: 375px;
+  height: 590px;
+}
+
+.social-media {
+  margin-top: 12px;
+  display: flex;
+  margin-left: 24px;
+}
+
+.social-icon {
+  color: #dbd8d7;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.primary-text {
+  color: #ff6b00;
+  margin: 120px 24px 0 24px;
+  font-size: 56px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+}
+
+.supporting-text {
+  color: #fff;
+  margin: 12px 24px 0 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.description {
+  color: #fff;
+  margin: 12px 24px 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
