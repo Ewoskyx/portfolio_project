@@ -4,7 +4,7 @@
 
 > Evren Ersoy personal portfolio project.
 
-![screenshot](./portfolio_mobile_view.png)
+![screenshot](./app_screenshot.png)
 
 Additional description about the project and its features.
 
