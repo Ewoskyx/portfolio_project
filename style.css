@@ -56,6 +56,13 @@
   top: 92px;
   width: 375px;
   height: 590px;
+  overflow: hidden;
+}
+
+.illustartion-div {
+  position: absolute;
+  right: 0;
+  top: 38%;
 }
 
 .social-media {
