@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .navbar {
   display: flex;
   background-color: #3c3a39;
@@ -20,7 +21,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
