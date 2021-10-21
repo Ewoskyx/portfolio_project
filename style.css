@@ -8,8 +8,9 @@
   display: flex;
   background-color: #3c3a39;
   align-items: flex-end;
-  width: 375px;
+  width: 414px;
   height: 92px;
+  overflow: hidden;
 }
 
 .nav-element {
@@ -56,15 +57,15 @@
   background-color: #1c1a19;
   position: absolute;
   top: 92px;
-  width: 375px;
-  height: 590px;
+  width: 414px;
+  height: 100vh;
   overflow: hidden;
 }
 
 .illustartion-div {
   position: absolute;
   right: 0;
-  top: 38%;
+  top: 35%;
 }
 
 .social-media {
@@ -107,4 +108,23 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 320px) {
+  .bg_image {
+    width: 120px;
+  }
+
+  .illustartion-div {
+    position: absolute;
+    right: 0;
+    top: 40%;
+  }
+
+  .hero {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
