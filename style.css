@@ -213,7 +213,7 @@ a {
 }
 
 .btn_1:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   color: #ff6b00;
   cursor: pointer;
 }
@@ -239,7 +239,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
   color: #fff;
   top: 22%;
@@ -302,7 +301,7 @@ a {
 }
 
 .card-btn:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   color: #ff6b00;
   cursor: pointer;
 }
@@ -363,11 +362,10 @@ a {
   letter-spacing: 3%;
 }
 .about-btn button:hover {
-  background-color: #FFF5E1;
+  background-color: #fff5e1;
   color: #ff6b00;
   cursor: pointer;
 }
-
 
 .about-img {
   position: absolute;
