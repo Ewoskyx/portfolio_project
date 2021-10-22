@@ -319,7 +319,7 @@ a {
 }
 
 .about-header {
-  margin: 120px 24px 0px 24px;
+  margin: 120px 24px 1px 24px;
 }
 
 .about-header h2 {
@@ -335,7 +335,7 @@ a {
 
 .about-content,
 .about-btn {
-  margin: 24px 24px 0px 24px;
+  margin: 24px 24px 1px 24px;
 }
 
 .about-content p {
@@ -404,7 +404,6 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
   position: relative;
 }
