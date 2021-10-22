@@ -361,6 +361,7 @@ a {
   font-weight: bold;
   letter-spacing: 3%;
 }
+
 .about-btn button:hover {
   background-color: #fff5e1;
   color: #ff6b00;
@@ -414,14 +415,13 @@ a {
   align-items: center;
 }
 
-.sub-list-items li {
-  margin: 0px 130.5px 32px 130.5px;
+.sub-list-items-li {
+  margin: 1px 130.5px 32px 130.5px;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 43px;
-  letter-spacing: 0em;
   text-align: center;
 }
 
