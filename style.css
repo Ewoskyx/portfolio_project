@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   background-color: #3c3a39;
@@ -55,8 +63,7 @@
   flex-direction: column;
   align-items: flex-start;
   background-color: #1c1a19;
-  position: absolute;
-  top: 92px;
+  position: relative;
   width: 414px;
   height: 100vh;
   overflow: hidden;
@@ -76,7 +83,6 @@
 
 .social-icon {
   color: #dbd8d7;
-  list-style: none;
   margin-right: 10px;
 }
 
@@ -108,6 +114,336 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+
+/* Works Section */
+
+.works {
+  width: 414px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.works-item {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.works-subject {
+  margin-top: 120px;
+}
+
+.works-subject h3 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.works-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 24px;
+  width: 327px;
+}
+
+.works-screen {
+  margin-top: 80px;
+  width: 327px;
+  height: 237px;
+}
+
+.works-subject-2 {
+  margin-top: 24px;
+}
+
+.works-subject-2 h4 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.works-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.tech-list {
+  margin-right: 12px;
+  padding: 10px 12px;
+  border: 1px solid#8993A4;
+}
+
+.tech-list a {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #091e42;
+}
+
+.btn_1 {
+  width: 124px;
+  height: 48px;
+  margin-top: 24px;
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  background-color: #ff6b00;
+  line-height: 0.25em;
+  letter-spacing: 3%;
+  color: #fff;
+  border: none;
+}
+
+.btn_1:hover {
+  background-color: #FFF5E1;
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+/* Works card styles */
+
+.works-card-grid {
+  position: relative;
+  width: 327px;
+  height: 386px;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 88% 12%;
+  background-image: url(./assests/default-work-img.png);
+  overflow: hidden;
+}
+
+.card-subject h4 {
+  position: absolute;
+  font-family: "Crete Round", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  top: 22%;
+  left: 5%;
+}
+
+.card-content-p {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #fff;
+  top: 45%;
+  left: 5%;
+  right: 5%;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  grid-row: 2 / 3;
+  background-color: black;
+}
+
+.card-tech ul {
+  display: flex;
+  position: absolute;
+  top: 75%;
+}
+
+.card-tech ul li {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  margin-left: 16px;
+  margin-right: 12px;
+}
+
+.card-tech ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.card-btn {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  background-color: #ff6b00;
+  line-height: 0.25em;
+  letter-spacing: 3%;
+  color: #fff;
+  border: none;
+}
+
+.card-btn:hover {
+  background-color: #FFF5E1;
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+.about {
+  width: 414px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  background-color: #1c1a19;
+  margin-top: 120px;
+  position: relative;
+}
+
+.about-header {
+  margin: 120px 24px 0px 24px;
+}
+
+.about-header h2 {
+  font-family: "Crete Round", serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  text-align: left;
+  color: #ff6b00;
+}
+
+.about-content,
+.about-btn {
+  margin: 24px 24px 0px 24px;
+}
+
+.about-content p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.about-btn button {
+  width: 161px;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 3%;
+}
+.about-btn button:hover {
+  background-color: #FFF5E1;
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+
+.about-img {
+  position: absolute;
+  right: 0%;
+}
+
+/* Skill section styles */
+
+.skill {
+  width: 414px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #1c1a19;
+  color: #fff;
+}
+
+.skills-divider {
+  margin: 32px 24px 136px 24px;
+  width: 327px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topics h2 {
+  margin-bottom: 44px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+}
+
+.sub-list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-list-items li {
+  margin: 0px 130.5px 32px 130.5px;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.language h2::before {
+  content: url(./assests/rectangle.png);
+  position: absolute;
+  left: -30%;
+}
+
+.frameworks h2::before {
+  content: url(./assests/square.png);
+  position: absolute;
+  left: -20%;
+}
+
+.skills h2::before {
+  content: url(./assests/circle.png);
+  position: absolute;
+  left: -40%;
 }
 
 /* Responsive */
