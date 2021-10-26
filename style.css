@@ -347,7 +347,7 @@ a {
   color: #fff;
 }
 
-.about-btn button {
+.btn {
   width: 161px;
   height: 48px;
   background-color: #ff6b00;
@@ -441,6 +441,83 @@ a {
   content: url(./assests/circle.png);
   position: absolute;
   left: -40%;
+}
+
+.form-section {
+  width: 414px;
+}
+
+.form-wrapper {
+  margin: 120px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.form-container {
+  margin-top: 67px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-li {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.user-info,
+.user-msg {
+  width: 100%;
+  font-size: 15px;
+}
+
+.user-info {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 14px;
+}
+
+.user-msg {
+  border: none;
+  padding: 12px;
+  background-color: #fbf8f7;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.submit-btn {
+  margin: 24px 0 4px 0;
+}
+
+footer {
+  width: 414px;
+}
+
+.footer-div {
+  border-top: 1px solid #dbd8d7;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-footer {
+  padding: 25px 0;
+  align-items: center;
+}
+
+.social-icon a {
+  margin: 0 5px; 
 }
 
 /* Responsive */
