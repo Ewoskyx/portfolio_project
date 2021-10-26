@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Evren Ersoy | Portfolio</title>
   </head>
+
   <body>
     <header class="navbar">
       <div class="nav-logo nav-element">
@@ -78,7 +79,9 @@
       <div class="works-item works-screen">
         <img src="./assests/work_img.png" alt="a screenshot of recent work" />
       </div>
-      <div class="works-item works-subject-2"><h4>Multi-Post Stories</h4></div>
+      <div class="works-item works-subject-2">
+        <h4>Multi-Post Stories</h4>
+      </div>
       <div class="works-item works-description">
         <p>
           A daily selection of privately personalized reads; no accounts or
@@ -226,7 +229,9 @@
       </div>
     </section>
     <section class="about">
-      <div class="about-header"><h2>About me</h2></div>
+      <div class="about-header">
+        <h2>About me</h2>
+      </div>
       <div class="about-content">
         <p>
           Hello I’m a software developer! I can help you build a product ,
@@ -236,16 +241,17 @@
         </p>
       </div>
       <div class="about-btn">
-        <button type="button">Get My Resume</button>
+        <button class="btn" type="button">Get My Resume</button>
         <img
           class="about-img"
           src="./assests/about-me-img.png"
           alt="about page illustration"
         />
       </div>
+      <div class="skills-divider"></div>
     </section>
     <section class="skill">
-      <div class="skills-divider"></div>
+      
       <div class="topics language">
         <h2>Language</h2>
         <ul class="sub-list-items">
@@ -276,5 +282,90 @@
         </ul>
       </div>
     </section>
+    <section class="form-section">
+      <div class="form-wrapper">
+        <div class="form-title">
+          <h2 class="title-h2">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+        </div>
+        <form
+          class="form-container"
+          action="https://formspree.io/f/myylaone"
+          method="post"
+        >
+          <ul class="input-fields">
+            <li class="form-li">
+              <input
+                class="user-info"
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Full name"
+                maxlength="30"
+                required
+              />
+            </li>
+            <li class="form-li">
+              <input
+                class="user-info"
+                type="email"
+                id="email"
+                name="user_email"
+                placeholder="Email address"
+                required
+              />
+            </li>
+            <li class="form-li">
+              <textarea
+                class="user-msg"
+                id="text-field"
+                name="user_text"
+                placeholder="Enter text here"
+                maxlength="500"
+                cols="10"
+                rows="5"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <button class="btn submit-btn" type="submit">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-div">
+        <ul class="social-media-footer social-media">
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/footer2.png" alt="social media icon 2"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/footer3.png" alt="social media icon 3"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/footer4.png" alt="social media icon 4"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/footer5.png" alt="social media icon 5"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/footer6.png" alt="social media icon 5"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
