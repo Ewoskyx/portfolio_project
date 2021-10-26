@@ -306,9 +306,15 @@ a {
   cursor: pointer;
 }
 
+.card-btn:active {
+  background-color: #e05304;
+  color: #fff5e1;
+  cursor: pointer;
+}
+
 .about {
   width: 414px;
-  min-height: 100vh;
+  height: 812px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -335,7 +341,7 @@ a {
 
 .about-content,
 .about-btn {
-  margin: 24px 24px 1px 24px;
+  margin: 24px 24px 0px 24px;
 }
 
 .about-content p {
@@ -362,9 +368,15 @@ a {
   letter-spacing: 3%;
 }
 
-.about-btn button:hover {
+.btn:hover {
   background-color: #fff5e1;
   color: #ff6b00;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #e05304;
+  color: #fff5e1;
   cursor: pointer;
 }
 
@@ -387,7 +399,7 @@ a {
 }
 
 .skills-divider {
-  margin: 32px 24px 136px 24px;
+  margin: 220px 24px 32px 24px;
   width: 327px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -404,7 +416,7 @@ a {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 40px;
   text-align: left;
   position: relative;
 }
@@ -517,7 +529,7 @@ footer {
 }
 
 .social-icon a {
-  margin: 0 5px; 
+  margin: 0 5px;
 }
 
 /* Responsive */
