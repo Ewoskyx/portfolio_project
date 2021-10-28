@@ -436,6 +436,7 @@ a {
 .about-illustration-desktop {
   display: none;
 }
+
 /* Skill section styles */
 .skill {
   height: auto;
@@ -583,6 +584,7 @@ a {
   .footer-div {
     width: 100%;
   }
+
   /* Navbar */
   .navbar {
     align-items: center;
@@ -697,7 +699,7 @@ a {
 
   .works {
     width: 100%;
-    height: 100%vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -713,15 +715,12 @@ a {
 
   .works-subject {
     width: 30%;
+    margin-top: 0;
+    color: #091e42;
   }
 
   .divider-img {
     width: 100%;
-  }
-
-  .works-subject {
-    margin-top: 0;
-    color: #091e42;
   }
 
   .works-row-2 {
@@ -756,6 +755,7 @@ a {
     width: 100%;
     height: 100%;
   }
+
   /* Products */
   .products-main {
     width: 100%;
@@ -833,6 +833,7 @@ a {
   .about-illustration-mobile {
     display: none;
   }
+
   /* Skills */
   .skill {
     flex-direction: row;
@@ -869,7 +870,7 @@ a {
 
   .form-wrapper {
     flex-direction: row;
-    padding: 0px 5%;
+    padding: 0 5%;
     align-items: baseline;
     flex-wrap: wrap;
     height: auto;
@@ -893,6 +894,7 @@ a {
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   /* Footer */
   .footer-main {
     width: 100%;
