@@ -616,11 +616,18 @@ a {
   }
 
   .desktop-menu li a {
+    display: inline-block;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 15px;
     padding: 12px;
+    transition: 0.3s;
+  }
+
+  .desktop-menu li a:hover{
+    color:#ff6b00;
+    transform: scale(1.1);
   }
 
   .mail-li {
