@@ -169,12 +169,12 @@ a {
 
 .skills-divider {
   background-color: #1c1a19;
-  padding: 28px;
 }
 
 .skills-divider img {
   width: 100%;
-  height: 2px;
+  height: 1px;
+  padding: 0 12px;
 }
 
 .works-subject h3 {
@@ -574,7 +574,7 @@ a {
 }
 
 /* Responsive Design for Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .navbar,
   .hero,
   .works,
