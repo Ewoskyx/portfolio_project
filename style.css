@@ -644,7 +644,6 @@ a {
 
   .mail-li:hover {
     animation: shaking_mailbox 1.2s ease-in;
-    
   }
 
   @keyframes shaking_mailbox {
@@ -652,6 +651,7 @@ a {
     100% {
       transform: translateX(0);
     }
+
     10%,
     30%,
     50%,
@@ -659,6 +659,7 @@ a {
     90% {
       transform: translateX(-10px);
     }
+    
     20%,
     40%,
     60%,
