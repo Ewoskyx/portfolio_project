@@ -17,10 +17,27 @@
 
   <body>
     <header class="navbar">
-      <div class="nav-logo nav-element">
+      <div class="nav-logo">
         <a class="name-logo" href="#">Evren Ersoy</a>
       </div>
       <nav class="hamburger-div nav-element">
+        <ul class="desktop-menu">
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li class="mail-li">
+            <a href="mailto:ewoskyx@gmail.com">
+              <i class="mail-icon"></i>
+            </a>
+          </li>
+        </ul>
+
         <img
           class="hamburger-icon"
           src="./assests/hamburger-icon.png"
@@ -29,231 +46,310 @@
       </nav>
     </header>
     <section class="hero">
-      <h1 class="primary-text">Hey There. <br />I'm Evren</h1>
-      <h3 class="supporting-text">I’am a Software Developer</h3>
-      <p class="description">
-        I can help you build a product, feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don’t hestiate to contact me.
-      </p>
-      <div class="illustartion-div">
-        <img
-          class="bg_image"
-          src="./assests/Illustration.png"
-          alt="illustration"
-        />
+      <div class="hero-center">
+        <div class="hero-title-wrapper">
+          <h1 class="primary-text">Hey There. <br />I'm Evren</h1>
+          <h3 class="supporting-text">I’am a Software Developer</h3>
+          <p class="description">
+            I can help you build a product, feature or website Look through some
+            of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
       </div>
-      <ul class="social-media">
-        <li class="social-icon">
-          <a href="#"
-            ><img src="./assests/Vector.png" alt="social media icon 1"
-          /></a>
-        </li>
-        <li class="social-icon">
-          <a href="#"
-            ><img src="./assests/Vector-1.png" alt="social media icon 2"
-          /></a>
-        </li>
-        <li class="social-icon">
-          <a href="#"
-            ><img src="./assests/Vector-2.png" alt="social media icon 3"
-          /></a>
-        </li>
-        <li class="social-icon">
-          <a href="#"
-            ><img src="./assests/Vector-3.png" alt="social media icon 4"
-          /></a>
-        </li>
-        <li class="social-icon">
-          <a href="#"
-            ><img src="./assests/Vector-4.png" alt="social media icon 5"
-          /></a>
-        </li>
-      </ul>
-    </section>
-    <section class="works">
-      <div class="works-item works-subject">
-        <h3>My Recent Works</h3>
+
+      <div class="hero-right">
+        <div class="illustartion-div">
+          <img
+            class="bg_image"
+            src="./assests/Illustration.png"
+            alt="illustration"
+          />
+        </div>
+        <div class="illustartion-div-desktop">
+          <img
+            class="bg_image2"
+            src="./assests/Illustration2.png"
+            alt="illustration"
+          />
+        </div>
       </div>
-      <div class="works-item works-divider"></div>
-      <div class="works-item works-screen">
-        <img src="./assests/work_img.png" alt="a screenshot of recent work" />
-      </div>
-      <div class="works-item works-subject-2">
-        <h4>Multi-Post Stories</h4>
-      </div>
-      <div class="works-item works-description">
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-      </div>
-      <div class="works-item">
-        <ul class="tech">
-          <li class="tech-list"><a href="#">css</a></li>
-          <li class="tech-list"><a href="#">html</a></li>
-          <li class="tech-list"><a href="#">bootstrap</a></li>
-          <li class="tech-list"><a href="#">Ruby</a></li>
+
+      <div class="hero-left">
+        <ul class="social-media">
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/Vector.png" alt="social media icon 1"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/Vector-1.png" alt="social media icon 2"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/Vector-2.png" alt="social media icon 3"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/Vector-3.png" alt="social media icon 4"
+            /></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"
+              ><img src="./assests/Vector-4.png" alt="social media icon 5"
+            /></a>
+          </li>
         </ul>
       </div>
-      <div class="works-item">
-        <button type="button" class="btn_1">See Project</button>
+    </section>
+    <section class="works">
+      <div class="works-col-1">
+        <div class="works-item works-subject">
+          <h3>My Recent Works</h3>
+        </div>
+        <div class="works-item works-divider">
+          <span
+            ><img
+              class="divider-img"
+              src="./assests/divider.png"
+              alt="page divider"
+          /></span>
+        </div>
       </div>
+
+      <div class="works-row-2">
+        <div class="works-item works-screen">
+          <img src="./assests/work_img.png" alt="a screenshot of recent work" />
+        </div>
+
+        <div class="works-col-2">
+          <div class="works-item works-subject-2">
+            <h4>Multi-Post Stories</h4>
+          </div>
+          <div class="works-item works-description">
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+
+          <div class="works-item">
+            <ul class="tech">
+              <li class="tech-list"><a href="#">css</a></li>
+              <li class="tech-list"><a href="#">html</a></li>
+              <li class="tech-list"><a href="#">bootstrap</a></li>
+              <li class="tech-list"><a href="#">Ruby</a></li>
+            </ul>
+          </div>
+          <div class="works-item">
+            <button type="button" class="btn_1">See Project</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Portfolio products -->
-      <div class="works-item works-card-grid">
-        <div class="grid-item card-subject">
-          <h4>Profesional Art Printing Data</h4>
+      <div class="products-main">
+        <div class="products-wrapper">
+          <div class="works-item works-card-grid grd1">
+            <div class="grid-item card-subject">
+              <h4>Profesional Art Printing Data</h4>
+            </div>
+            <div class="grid-item card-content">
+              <p class="card-content-p">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="grid-item card-tech">
+              <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <div class="grid-item btn-div card-btn1">
+              <button type="button" class="card-btn">See Project</button>
+            </div>
+          </div>
         </div>
-        <div class="grid-item card-content">
-          <p class="card-content-p">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
+        <div class="products-wrapper">
+          <div class="works-item works-card-grid grd2">
+            <div class="grid-item card-subject">
+              <h4 class="h4-mobile">Profesional Art Printing Data</h4>
+              <h4 class="h4-desktop">Data Dashboard Healthcare</h4>
+            </div>
+            <div class="grid-item card-content">
+              <p class="card-content-p">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="grid-item card-tech">
+              <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <div class="grid-item btn-div">
+              <button type="button" class="card-btn">See Project</button>
+            </div>
+          </div>
         </div>
-        <div class="grid-item card-tech">
-          <ul>
-            <li><a href="#">html</a></li>
-            <li><a href="#">bootstrap</a></li>
-            <li><a href="#">Ruby</a></li>
-          </ul>
+        <div class="products-wrapper">
+          <div class="works-item works-card-grid grd3">
+            <div class="grid-item card-subject">
+              <h4 class="h4-mobile">Profesional Art Printing Data</h4>
+              <h4 class="h4-desktop">Website Protfolio</h4>
+            </div>
+            <div class="grid-item card-content">
+              <p class="card-content-p">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="grid-item card-tech">
+              <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <div class="grid-item btn-div">
+              <button type="button" class="card-btn">See Project</button>
+            </div>
+          </div>
         </div>
-        <div class="grid-item btn-div">
-          <button type="button" class="card-btn">See Project</button>
+        <div class="products-wrapper">
+          <div class="works-item works-card-grid grd4">
+            <div class="grid-item card-subject">
+              <h4>Profesional Art Printing Data</h4>
+            </div>
+            <div class="grid-item card-content">
+              <p class="card-content-p">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="grid-item card-tech">
+              <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <div class="grid-item btn-div">
+              <button type="button" class="card-btn">See Project</button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="works-item works-card-grid">
-        <div class="grid-item card-subject">
-          <h4>Profesional Art Printing Data</h4>
+        <div class="products-wrapper">
+          <div class="works-item works-card-grid grd5">
+            <div class="grid-item card-subject">
+              <h4 class="h4-mobile">Profesional Art Printing Data</h4>
+              <h4 class="h4-desktop">Data Dashboard Healthcare</h4>
+            </div>
+            <div class="grid-item card-content">
+              <p class="card-content-p">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="grid-item card-tech">
+              <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <div class="grid-item btn-div">
+              <button type="button" class="card-btn">See Project</button>
+            </div>
+          </div>
         </div>
-        <div class="grid-item card-content">
-          <p class="card-content-p">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-        </div>
-        <div class="grid-item card-tech">
-          <ul>
-            <li><a href="#">html</a></li>
-            <li><a href="#">bootstrap</a></li>
-            <li><a href="#">Ruby</a></li>
-          </ul>
-        </div>
-        <div class="grid-item btn-div">
-          <button type="button" class="card-btn">See Project</button>
-        </div>
-      </div>
-      <div class="works-item works-card-grid">
-        <div class="grid-item card-subject">
-          <h4>Profesional Art Printing Data</h4>
-        </div>
-        <div class="grid-item card-content">
-          <p class="card-content-p">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-        </div>
-        <div class="grid-item card-tech">
-          <ul>
-            <li><a href="#">html</a></li>
-            <li><a href="#">bootstrap</a></li>
-            <li><a href="#">Ruby</a></li>
-          </ul>
-        </div>
-        <div class="grid-item btn-div">
-          <button type="button" class="card-btn">See Project</button>
-        </div>
-      </div>
-      <div class="works-item works-card-grid">
-        <div class="grid-item card-subject">
-          <h4>Profesional Art Printing Data</h4>
-        </div>
-        <div class="grid-item card-content">
-          <p class="card-content-p">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-        </div>
-        <div class="grid-item card-tech">
-          <ul>
-            <li><a href="#">html</a></li>
-            <li><a href="#">bootstrap</a></li>
-            <li><a href="#">Ruby</a></li>
-          </ul>
-        </div>
-        <div class="grid-item btn-div">
-          <button type="button" class="card-btn">See Project</button>
-        </div>
-      </div>
-      <div class="works-item works-card-grid">
-        <div class="grid-item card-subject">
-          <h4>Profesional Art Printing Data</h4>
-        </div>
-        <div class="grid-item card-content">
-          <p class="card-content-p">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-        </div>
-        <div class="grid-item card-tech">
-          <ul>
-            <li><a href="#">html</a></li>
-            <li><a href="#">bootstrap</a></li>
-            <li><a href="#">Ruby</a></li>
-          </ul>
-        </div>
-        <div class="grid-item btn-div">
-          <button type="button" class="card-btn">See Project</button>
-        </div>
-      </div>
-      <div class="works-item works-card-grid">
-        <div class="grid-item card-subject">
-          <h4>Profesional Art Printing Data</h4>
-        </div>
-        <div class="grid-item card-content">
-          <p class="card-content-p">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-        </div>
-        <div class="grid-item card-tech">
-          <ul>
-            <li><a href="#">html</a></li>
-            <li><a href="#">bootstrap</a></li>
-            <li><a href="#">Ruby</a></li>
-          </ul>
-        </div>
-        <div class="grid-item btn-div">
-          <button type="button" class="card-btn">See Project</button>
+        <div class="product-wrapper">
+          <div class="works-item works-card-grid grd6">
+            <div class="grid-item card-subject">
+              <h4 class="h4-mobile">Profesional Art Printing Data</h4>
+              <h4 class="h4-desktop">Website Protfolio</h4>
+            </div>
+            <div class="grid-item card-content">
+              <p class="card-content-p">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="grid-item card-tech">
+              <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <div class="grid-item btn-div">
+              <button type="button" class="card-btn">See Project</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="about">
-      <div class="about-header">
-        <h2>About me</h2>
+      <div class="about-left">
+        <div class="about-header">
+          <h2>About me</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+        </div>
+        <div class="about-btn">
+          <button class="btn" type="button">Get My Resume</button>
+        </div>
       </div>
-      <div class="about-content">
-        <p>
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
+      <div class="about-right">
+        <div class="about-illustration-mobile">
+          <img
+            class="about-img"
+            src="./assests/about-me-img.png"
+            alt="about page illustration"
+          />
+        </div>
+        <div class="about-illustration-desktop">
+          <img
+            class="about-img2"
+            src="./assests/about-me-img2.png"
+            alt="about page illustration"
+          />
+        </div>
       </div>
-      <div class="about-btn">
-        <button class="btn" type="button">Get My Resume</button>
-        <img
-          class="about-img"
-          src="./assests/about-me-img.png"
-          alt="about page illustration"
-        />
-      </div>
-      <div class="skills-divider"></div>
     </section>
+    <div class="skills-divider">
+      <span
+        ><img
+          class="divider-img-2"
+          src="./assests/divider-light.png"
+          alt="page divider"
+      /></span>
+    </div>
+    <!--Skills Section -->
     <section class="skill">
-      
+     
       <div class="topics language">
-        <h2>Language</h2>
+        <div class="orng1">
+          <span
+            ><img src="./assests/rectangle.png" alt="rectangle icon"
+          /></span>
+          <h2>Language</h2>
+        </div>
         <ul class="sub-list-items">
           <li class="sub-list-items-li">Javascript</li>
           <li class="sub-list-items-li">Ruby</li>
@@ -262,7 +358,11 @@
         </ul>
       </div>
       <div class="topics frameworks">
-        <h2>Frameworks</h2>
+        <div class="orng1">
+          <span><img src="./assests/square.png" alt="rectangle icon" /></span>
+          <h2>Frameworks</h2>
+        </div>
+
         <ul class="sub-list-items">
           <li class="sub-list-items-li">Bootstrap</li>
           <li class="sub-list-items-li">Ruby on Rails</li>
@@ -272,7 +372,11 @@
         </ul>
       </div>
       <div class="topics skills">
-        <h2>Skills</h2>
+        <div class="orng1">
+          <span><img src="./assests/circle.png" alt="rectangle icon" /></span>
+          <h2>Skills</h2>
+        </div>
+
         <ul class="sub-list-items">
           <li class="sub-list-items-li">Codekit</li>
           <li class="sub-list-items-li">Github</li>
@@ -336,7 +440,7 @@
         </form>
       </div>
     </section>
-    <footer>
+    <footer class="footer-main">
       <div class="footer-div">
         <ul class="social-media-footer social-media">
           <li class="social-icon">
