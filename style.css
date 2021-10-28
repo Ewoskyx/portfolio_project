@@ -80,14 +80,12 @@ a {
 .hero-center {
   height: 50%;
   width: 70%;
- 
 }
 
 .hero-left {
   width: 50%;
   display: flex;
   justify-content: flex-start;
-  
 }
 
 .hero-right {
@@ -97,7 +95,6 @@ a {
   bottom: 0;
   right: 0;
   width: 100%;
-  
 }
 
 .illustartion-div-desktop {
@@ -440,7 +437,6 @@ a {
   display: none;
 }
 /* Skill section styles */
-
 .skill {
   height: auto;
   display: flex;
@@ -588,7 +584,6 @@ a {
     width: 100%;
   }
   /* Navbar */
-
   .navbar {
     align-items: center;
   }
@@ -747,7 +742,7 @@ a {
     color: #091e42;
   }
 
-  .tech li{
+  .tech li {
     margin: auto 2px;
   }
 
@@ -761,9 +756,7 @@ a {
     width: 100%;
     height: 100%;
   }
-
-   /* Products */
-
+  /* Products */
   .products-main {
     width: 100%;
     display: flex;
@@ -840,8 +833,6 @@ a {
   .about-illustration-mobile {
     display: none;
   }
-
-  
   /* Skills */
   .skill {
     flex-direction: row;
@@ -887,6 +878,7 @@ a {
   .form-container {
     width: 60%;
   }
+
   .form-title {
     width: 40%;
   }
@@ -901,7 +893,6 @@ a {
     align-items: flex-start;
     justify-content: flex-start;
   }
-
   /* Footer */
   .footer-main {
     width: 100%;
