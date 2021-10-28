@@ -336,6 +336,7 @@ a {
   letter-spacing: 3%;
   color: #fff;
   border: none;
+  transition: 0.3s ease-in-out;
 }
 
 .card-btn:hover {
