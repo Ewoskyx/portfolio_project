@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-N/A
+https://ewoskyx.github.io/portfolio_project/
 
 
 ## Getting Started
