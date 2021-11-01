@@ -111,6 +111,11 @@ a {
 .social-icon {
   color: #dbd8d7;
   margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.5);
 }
 
 .primary-text {
@@ -248,6 +253,7 @@ a {
   letter-spacing: 3%;
   color: #fff;
   border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn_1:hover {
@@ -336,6 +342,7 @@ a {
   letter-spacing: 3%;
   color: #fff;
   border: none;
+  transition: 0.3s ease-in-out;
 }
 
 .card-btn:hover {
@@ -419,6 +426,7 @@ a {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 3%;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn:hover {
@@ -615,20 +623,53 @@ a {
   }
 
   .desktop-menu li a {
+    display: inline-block;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 15px;
     padding: 12px;
+    transition: 0.3s;
+  }
+
+  .desktop-menu li a:hover {
+    color: #ff6b00;
+    transform: scale(1.1);
   }
 
   .mail-li {
-    display: inline;
+    display: inline-block;
     margin-top: 5px;
   }
 
+  .mail-li:hover {
+    animation: shaking_mailbox 1.2s ease-in;
+  }
+
+  @keyframes shaking_mailbox {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
+
   .mail-icon {
-    display: inline-flex;
+    display: inline-block;
     width: 24px;
     height: 24px;
     background-image: url(./assests/mail-icon.png);
