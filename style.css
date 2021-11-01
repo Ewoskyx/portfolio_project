@@ -643,7 +643,7 @@ a {
   }
 
   .mail-li:hover {
-    animation: shaking_mailbox 1.2s ease-in;
+    animation: shaking_mailbox 1.6s ease-in;
   }
 
   @keyframes shaking_mailbox {
