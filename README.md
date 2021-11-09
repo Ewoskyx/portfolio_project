@@ -10,8 +10,9 @@ Additional description about the project and its features.
 
 ## Built With
 
-- HTML5 & CSS3
-- Flexbox
+- HTML5 
+- CSS3
+- Javascript
 
 
 ## Live Demo
