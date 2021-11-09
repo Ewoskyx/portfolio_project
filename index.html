@@ -37,25 +37,34 @@
 
   <body>
     <header class="navbar">
-      <nav class="navbar-menu "> <a href="#" class="logo">Evren Ersoy</a>
+      <nav class="navbar-menu">
+        <a href="#" class="logo">Evren Ersoy</a>
         <ul class="desktop-menu" id="dropdownClick">
-          <li>
-            <a class="nav-a" href="#portfolio" onclick="toggle(this)">Portfolio</a>
+          <li class="nav-li">
+            <a class="nav-a" href="#portfolio" onclick="toggle(this)"
+              >Portfolio</a
+            >
           </li>
-          <li>
+          <li class="nav-li">
             <a class="nav-a" href="#about" onclick="toggle(this)">About</a>
           </li>
-          <li>
+          <li class="nav-li">
             <a class="nav-a" href="#contact" onclick="toggle(this)">Contact</a>
           </li>
-          <li class="mail-li">
+          <li class="mail-li nav-li">
             <a href="mailto:ewoskyx@gmail.com">
               <i class="mail-icon"></i>
             </a>
           </li>
-          <li class="dropdownIcon"><a id="toggleIcon" class="fas fa-bars" href="javascript:;" onclick="toggle(this)"></a></li>
+          <li class="dropdownIcon">
+            <a
+              id="toggleIcon"
+              class="fas fa-bars"
+              href="javascript:;"
+              onclick="toggle(this)"
+            ></a>
+          </li>
         </ul>
-        
       </nav>
     </header>
     <section id="hero" class="hero">
@@ -179,7 +188,7 @@
               </p>
             </div>
             <div class="grid-item card-tech">
-              <ul>
+              <ul class="card-tech-ul">
                 <li><a href="#">html</a></li>
                 <li><a href="#">bootstrap</a></li>
                 <li><a href="#">Ruby</a></li>
