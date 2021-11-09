@@ -25,41 +25,40 @@
       rel="stylesheet"
       crossorigin
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Evren Ersoy | Portfolio</title>
   </head>
 
   <body>
     <header class="navbar">
-      <div class="nav-logo">
-        <a class="name-logo" href="#">Evren Ersoy</a>
-      </div>
-      <nav class="hamburger-div nav-element">
-        <ul class="desktop-menu">
+      <nav class="navbar-menu ">
+        <ul class="desktop-menu" id="dropdownClick">
           <li>
-            <a href="#">Portfolio</a>
+            <a class="nav-a" href="#portfolio" onclick="toggle(this)">Portfolio</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a class="nav-a" href="#about" onclick="toggle(this)">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a class="nav-a" href="#contact" onclick="toggle(this)">Contact</a>
           </li>
           <li class="mail-li">
             <a href="mailto:ewoskyx@gmail.com">
               <i class="mail-icon"></i>
             </a>
           </li>
+          <li class="dropdownIcon"><a id="toggleIcon" class="fas fa-bars" href="javascript:;" onclick="toggle(this)"></a></li>
         </ul>
-
-        <img
-          class="hamburger-icon"
-          src="./assests/hamburger-icon.png"
-          alt="hamburger menu icon"
-        />
+        
       </nav>
     </header>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero-center">
         <div class="hero-title-wrapper">
           <h1 class="primary-text">Hey There. <br />I'm Evren</h1>
@@ -119,7 +118,7 @@
         </ul>
       </div>
     </section>
-    <section class="works">
+    <section id="portfolio" class="works">
       <div class="works-col-1">
         <div class="works-item works-subject">
           <h3>My Recent Works</h3>
@@ -312,7 +311,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-left">
         <div class="about-header">
           <h2>About me</h2>
@@ -399,7 +398,7 @@
         </ul>
       </div>
     </section>
-    <section class="form-section">
+    <section id="contact" class="form-section">
       <div class="form-wrapper">
         <div class="form-title">
           <h2 class="title-h2">
@@ -484,5 +483,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
