@@ -27,7 +27,6 @@ a {
 
 .logo {
   color: #fff;
-  display: flex;
   width: 180px;
   font-size: 24px;
   margin-left: 12%;
@@ -38,7 +37,7 @@ a {
 
 .logo:hover {
   color: #e05304;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-menu {
@@ -46,7 +45,7 @@ a {
   height: 100%;
 }
 
-.desktop-menu li:not(:nth-child(5)) {
+.desktop-menu .nav-li {
   display: none;
 }
 
@@ -72,8 +71,11 @@ a {
   color: #67798e;
 }
 
-.desktop-menu.hamburger li,
 .desktop-menu li {
+  display: inline;
+}
+
+.desktop-menu.hamburger li {
   display: inline;
 }
 
@@ -361,7 +363,7 @@ a {
   top: 75%;
 }
 
-.card-tech ul li {
+.card-tech .card-tech-ul li {
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
   margin-left: 16px;
@@ -544,7 +546,7 @@ a {
   text-align: center;
 }
 
-/*Form*/
+/* Form */
 
 .form-section {
   padding-top: 92px;
@@ -683,8 +685,8 @@ a {
     display: flex;
   }
 
-  ul.desktop-menu.hamburger li.dropdownIcon,
-  ul.desktop-menu li.dropdownIcon {
+  ul.desktop-menu li.dropdownIcon,
+  ul.desktop-menu.hamburger li.dropdownIcon {
     display: none;
   }
 
@@ -852,7 +854,7 @@ a {
     color: #091e42;
   }
 
-  .tech li {
+  .tech-list {
     margin: auto 2px;
   }
 
@@ -962,7 +964,7 @@ a {
   }
 
   .topics h2,
-  .topics ul li {
+  .sub-list-items-li {
     align-items: center;
     width: 50%;
     text-align: center;
