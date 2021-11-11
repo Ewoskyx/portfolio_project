@@ -22,7 +22,7 @@ a {
   min-height: 92px;
   overflow: hidden;
   position: fixed;
-  z-index: 10;
+  z-index: 11;
 }
 
 .logo {
