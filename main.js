@@ -5,6 +5,7 @@ const toggleElement = document.getElementById('dropdownClick');
 const popDiv = document.getElementById('pop-div');
 const seeProject = document.getElementById('btn-pop');
 const navElements = document.querySelectorAll('a.nav-a');
+const form = document.getElementById('submit');
 
 /* Toggle the collapse */
 function toggle() {
@@ -118,3 +119,33 @@ function modalMobileTitle() {
   }
 }
 window.addEventListener('resize', modalMobileTitle);
+/* Validating the e-mail for lowercase */
+/* Display the message */
+function displayMessage(mailInput, message, type) {
+  const msg = document.getElementById('small');
+  msg.innerText = message;
+  mailInput.className = type ? 'success' : 'error';
+}
+/* Show Error */
+function showError(mailInput, msg) {
+  return displayMessage(mailInput, msg, false);
+}
+/* Validate */
+function validateMail(mailInput, msg) {
+  const toLowerRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const email = mailInput.value.trim();
+  if (!toLowerRegex.test(email)) {
+    return showError(mailInput, msg);
+  }
+  return true;
+}
+const EMAIL_UPPER = 'Email field can not contain upper case characters!';
+/* Event listner for email input */
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailValid = validateMail(form.elements.email, EMAIL_UPPER);
+  if (emailValid) {
+    form.submit();
+    form.reset();
+  }
+});
