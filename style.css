@@ -22,7 +22,7 @@ a {
   min-height: 92px;
   overflow: hidden;
   position: fixed;
-  z-index: 11;
+  z-index: 10;
 }
 
 .logo {
@@ -37,7 +37,7 @@ a {
 
 .logo:hover {
   color: #e05304;
-  transition: all 0.5s ease;
+  transition: all 0.6s ease;
 }
 
 .navbar-menu {
@@ -535,6 +535,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .sub-list-items-li {
@@ -583,14 +584,23 @@ a {
 }
 
 .user-info,
-.user-msg {
+.user-msg,
+.error,
+.success {
   width: 100%;
   font-size: 15px;
 }
 
-.user-info {
+.user-info,
+.success {
   border: none;
   border-bottom: 1px solid #dbd8d7;
+  padding: 14px;
+}
+
+.error {
+  border: none;
+  border-bottom: 1px dashed #f00;
   padding: 14px;
 }
 
@@ -605,6 +615,12 @@ a {
 
 .submit-btn {
   margin: 24px 0 4px 0;
+}
+
+.error-msg {
+  display: inline-flex;
+  color: #f00;
+  font-size: 0.9em;
 }
 
 /* Footer */

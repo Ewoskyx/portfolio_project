@@ -3,8 +3,9 @@ import objArr from './data.js';
 const toggleIcon = document.getElementById('toggleIcon');
 const toggleElement = document.getElementById('dropdownClick');
 const popDiv = document.getElementById('pop-div');
-const seeProject = document.getElementById('btn-pop');
+const seeProject = document.querySelectorAll('button.btn-pop');
 const navElements = document.querySelectorAll('a.nav-a');
+const form = document.getElementById('submit');
 
 /* Toggle the collapse */
 function toggle() {
@@ -76,8 +77,8 @@ const popTheProject = `
     <div class="center-right">
      <p>${description}</p>
      <div class="pop-btn-div">
-      <button class="pop-btn" type="button">${live}<span><img src="${icon2}" alt="..."></span></button>
-      <button class="pop-btn" type="button">${source}<span><img src="${icon1}" alt="..."></button>
+      <a class="pop-btn" href="https://ewoskyx.github.io/portfolio_project/" target="_blank">${live}<span><img src="${icon2}" alt="..."></span></a>
+      <a class="pop-btn" href="https://github.com/Ewoskyx/portfolio_project" target="_blank">${source}<span><img src="${icon1}" alt="..."></a>
      </div>
     </div>
   </div>
@@ -97,7 +98,9 @@ function addPopup() {
   }
 }
 
-seeProject.addEventListener('click', addPopup);
+seeProject.forEach((e) => {
+  e.addEventListener('click', addPopup);
+});
 
 /* Closing the modal */
 document.body.addEventListener('click', (e) => {
@@ -118,3 +121,33 @@ function modalMobileTitle() {
   }
 }
 window.addEventListener('resize', modalMobileTitle);
+/* Validating the e-mail for lowercase */
+/* Display the message */
+function displayMessage(mailInput, message, type) {
+  const msg = document.getElementById('small');
+  msg.innerText = message;
+  mailInput.className = type ? 'success' : 'error';
+}
+/* Show Error */
+function showError(mailInput, msg) {
+  return displayMessage(mailInput, msg, false);
+}
+/* Validate */
+function validateMail(mailInput, msg) {
+  const toLowerRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const email = mailInput.value.trim();
+  if (!toLowerRegex.test(email)) {
+    return showError(mailInput, msg);
+  }
+  return true;
+}
+const EMAIL_UPPER = 'Email field can not contain upper case characters!';
+/* Event listner for email input */
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailValid = validateMail(form.elements.email, EMAIL_UPPER);
+  if (emailValid) {
+    form.submit();
+    form.reset();
+  }
+});
