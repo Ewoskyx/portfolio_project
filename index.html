@@ -41,13 +41,13 @@
         <a href="#" class="logo">Evren Ersoy</a>
         <ul class="desktop-menu" id="dropdownClick">
           <li class="nav-li">
-            <a id="nava" class="nav-a" onclick="toggleOff(this)" href="#portfolio">Portfolio</a>
+            <a class="nav-a" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-li">
-            <a id="nava" class="nav-a" onclick="toggleOff(this)" href="#about">About</a>
+            <a class="nav-a" href="#about">About</a>
           </li>
           <li class="nav-li">
-            <a id="nava" class="nav-a" onclick="toggleOff(this)" href="#contact">Contact</a>
+            <a class="nav-a" href="#contact">Contact</a>
           </li>
           <li class="mail-li nav-li">
             <a href="mailto:ewoskyx@gmail.com">
@@ -55,12 +55,7 @@
             </a>
           </li>
           <li class="dropdownIcon">
-            <a
-              id="toggleIcon"
-              class="fas fa-bars"
-              href="#foo"
-              onclick="toggle(this)"
-            ></a>
+            <a id="toggleIcon" class="fas fa-bars" href="#foo"></a>
           </li>
         </ul>
       </nav>
@@ -126,6 +121,7 @@
       </div>
     </section>
     <section id="portfolio" class="works">
+      <div id="pop-div"></div>
       <div class="works-col-1">
         <div class="works-item works-subject">
           <h3>My Recent Works</h3>
@@ -167,7 +163,9 @@
             </ul>
           </div>
           <div class="works-item">
-            <button type="button" class="btn_1">See Project</button>
+            <button type="button" class="btn_1" id="btn-pop">
+              See Project
+            </button>
           </div>
         </div>
       </div>
@@ -210,7 +208,7 @@
               </p>
             </div>
             <div class="grid-item card-tech">
-              <ul>
+              <ul class="card-tech-ul">
                 <li><a href="#">html</a></li>
                 <li><a href="#">bootstrap</a></li>
                 <li><a href="#">Ruby</a></li>
@@ -234,7 +232,7 @@
               </p>
             </div>
             <div class="grid-item card-tech">
-              <ul>
+              <ul class="card-tech-ul">
                 <li><a href="#">html</a></li>
                 <li><a href="#">bootstrap</a></li>
                 <li><a href="#">Ruby</a></li>
@@ -257,7 +255,7 @@
               </p>
             </div>
             <div class="grid-item card-tech">
-              <ul>
+              <ul class="card-tech-ul">
                 <li><a href="#">html</a></li>
                 <li><a href="#">bootstrap</a></li>
                 <li><a href="#">Ruby</a></li>
@@ -281,7 +279,7 @@
               </p>
             </div>
             <div class="grid-item card-tech">
-              <ul>
+              <ul class="card-tech-ul">
                 <li><a href="#">html</a></li>
                 <li><a href="#">bootstrap</a></li>
                 <li><a href="#">Ruby</a></li>
@@ -305,7 +303,7 @@
               </p>
             </div>
             <div class="grid-item card-tech">
-              <ul>
+              <ul class="card-tech-ul">
                 <li><a href="#">html</a></li>
                 <li><a href="#">bootstrap</a></li>
                 <li><a href="#">Ruby</a></li>
@@ -414,6 +412,7 @@
           </h2>
         </div>
         <form
+          id="submit"
           class="form-container"
           action="https://formspree.io/f/myylaone"
           method="post"
@@ -435,10 +434,11 @@
                 class="user-info"
                 type="email"
                 id="email"
-                name="user_email"
+                name="email"
                 placeholder="Email address"
                 required
               />
+              
             </li>
             <li class="form-li">
               <textarea
@@ -451,9 +451,11 @@
                 rows="5"
                 required
               ></textarea>
+              <small id="small" class="error-msg"></small>
             </li>
             <li>
               <button class="btn submit-btn" type="submit">Get in touch</button>
+              
             </li>
           </ul>
         </form>
@@ -490,7 +492,7 @@
         </ul>
       </div>
     </footer>
-    <script src="./main.js"></script>
+    <div id="test-div"></div>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
-id="nava"
