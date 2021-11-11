@@ -3,7 +3,7 @@ import objArr from './data.js';
 const toggleIcon = document.getElementById('toggleIcon');
 const toggleElement = document.getElementById('dropdownClick');
 const popDiv = document.getElementById('pop-div');
-const seeProject = document.getElementById('btn-pop');
+const seeProject = document.querySelectorAll('button.btn-pop');
 const navElements = document.querySelectorAll('a.nav-a');
 const form = document.getElementById('submit');
 
@@ -77,8 +77,8 @@ const popTheProject = `
     <div class="center-right">
      <p>${description}</p>
      <div class="pop-btn-div">
-      <button class="pop-btn" type="button">${live}<span><img src="${icon2}" alt="..."></span></button>
-      <button class="pop-btn" type="button">${source}<span><img src="${icon1}" alt="..."></button>
+      <a class="pop-btn" href="https://ewoskyx.github.io/portfolio_project/" target="_blank">${live}<span><img src="${icon2}" alt="..."></span></a>
+      <a class="pop-btn" href="https://github.com/Ewoskyx/portfolio_project" target="_blank">${source}<span><img src="${icon1}" alt="..."></a>
      </div>
     </div>
   </div>
@@ -98,7 +98,9 @@ function addPopup() {
   }
 }
 
-seeProject.addEventListener('click', addPopup);
+seeProject.forEach((e) => {
+  e.addEventListener('click', addPopup);
+});
 
 /* Closing the modal */
 document.body.addEventListener('click', (e) => {
