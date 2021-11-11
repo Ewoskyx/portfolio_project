@@ -6,6 +6,9 @@ const popDiv = document.getElementById('pop-div');
 const seeProject = document.querySelectorAll('button.btn-pop');
 const navElements = document.querySelectorAll('a.nav-a');
 const form = document.getElementById('submit');
+const name = document.getElementById('name');
+const mail = document.getElementById('email');
+const msg = document.getElementById('text-field');
 
 /* Toggle the collapse */
 function toggle() {
@@ -141,13 +144,35 @@ function validateMail(mailInput, msg) {
   }
   return true;
 }
+/* Add local storage */
+const userArr = [];
+
+function addUser() {
+  const user = {
+    nameValue: name.value,
+    mailValue: mail.value,
+    msgValue: msg.value,
+  };
+  userArr.push(user);
+  localStorage.setItem('UserList', JSON.stringify(userArr));
+}
+function getUser() {
+  let data = localStorage.getItem('UserList');
+  data = JSON.parse(data);
+  const lastUser = data[data.length - 1];
+  name.value = lastUser.nameValue;
+  mail.value = lastUser.mailValue;
+  msg.value = lastUser.msgValue;
+}
 const EMAIL_UPPER = 'Email field can not contain upper case characters!';
 /* Event listner for email input */
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const emailValid = validateMail(form.elements.email, EMAIL_UPPER);
   if (emailValid) {
+    addUser();
     form.submit();
     form.reset();
   }
 });
+getUser();
