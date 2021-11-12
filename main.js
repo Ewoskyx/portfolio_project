@@ -117,12 +117,10 @@ document.body.addEventListener('click', (e) => {
 /* Change modal title on mobile */
 function modalMobileTitle() {
   const modalTitle = document.getElementById('modal-title');
-  if (modalTitle !== null) {
-    if (window.innerWidth < 992) {
-      modalTitle.innerHTML = 'Multi-Post Stories';
-    } else {
-      modalTitle.innerHTML = `${title}`;
-    }
+  if (window.innerWidth < 992) {
+    modalTitle.innerHTML = 'Multi-Post Stories';
+  } else {
+    modalTitle.innerHTML = `${title}`;
   }
 }
 window.addEventListener('resize', modalMobileTitle);
